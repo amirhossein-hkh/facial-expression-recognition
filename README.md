@@ -20,6 +20,15 @@ The combination of these dataset will have about 300,000 images for the 5 class.
 | Angry         | 28,168           |
 | Surprise      | 18,608           |
 
+## Dependencies
+
+```
+numpy (1.16.4)
+tensorflow (1.14.0)
+keras (2.2.4)
+opencv (3.4)
+```
+
 ## Haar-Cascade
 
 [Haar cascade classifiers](https://docs.opencv.org/3.4.1/d7/d8b/tutorial_py_face_detection.html) first were proposed by Paul Viola and Michael Jones and uses Haar kernels for extracing features and it uses multiple classifiers one after an other. The classifiers get more complex as data move forward. Each classifier will specify whether the image is maybe from the desired class or it is definitly not in the desired class and if it is maybe from the desired class will pass image forward to the next classifier.
@@ -42,6 +51,8 @@ for example:
 Then after creating the vector file you can start the actuall training with the following command:
 
 ```opencv_traincascade -data data -vec positives.vec -bg bg.txt -numPos 7000 -numNeg 3500 -numStages 10 -w 20 -h 20```
+
+I trained the haar cascade with 7000 positive images and 3500 negative images for 21 stage which it make a very few mistakes.
 
 For more information you can reffer to [opencv website](https://docs.opencv.org/3.4.3/dc/d88/tutorial_traincascade.html).
 
