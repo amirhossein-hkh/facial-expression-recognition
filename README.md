@@ -36,9 +36,11 @@ After collecting data and creating the two description files, you have to instal
 First you need to create a vector file from the positive image with the following command:
 opencv_createsamples -info \[name of description file] -num \[number of positive samples] -w \[width of the output] -h \[height of the output] -vec \[name of the vector file]
 for example:
+
 ```opencv_createsamples -info info/info.lst -num 9000 -w 20 -h 20 -vec positives.vec```
 
 Then after creating the vector file you can start the actuall training with the following command:
+
 ```opencv_traincascade -data data -vec positives.vec -bg bg.txt -numPos 7000 -numNeg 3500 -numStages 10 -w 20 -h 20```
 
 For more information you can reffer to [opencv website](https://docs.opencv.org/3.4.3/dc/d88/tutorial_traincascade.html).
@@ -112,7 +114,6 @@ Non-trainable params: 1,792
 ## References
 [Rapid Object Detection usinga Boosted Cascade of Simple Features](https://www.cs.cmu.edu/~efros/courses/LBMV07/Papers/viola-cvpr-01.pdf)
 [AffectNet: A Database for Facial Expression, Valence, and Arousal Computing in the Wild](https://arxiv.org/abs/1708.03985)
-
 [Kaggel](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge)
 
 
