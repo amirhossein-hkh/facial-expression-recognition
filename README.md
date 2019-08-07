@@ -113,8 +113,10 @@ Non-trainable params: 1,792
 
 ## References
 [Rapid Object Detection usinga Boosted Cascade of Simple Features](https://www.cs.cmu.edu/~efros/courses/LBMV07/Papers/viola-cvpr-01.pdf)
+
 [AffectNet: A Database for Facial Expression, Valence, and Arousal Computing in the Wild](https://arxiv.org/abs/1708.03985)
-[Kaggel](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge)
+
+[Kaggel Challenge](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge)
 
 
 
