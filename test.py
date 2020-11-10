@@ -36,7 +36,7 @@ while True:
 		
 	cv2.imshow('Facial Expression', img)
 	img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-	writer.writeFrame(img)
+	# writer.writeFrame(img)
 	if cv2.waitKey(5) != -1:
 		break
 
